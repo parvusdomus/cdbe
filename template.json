@@ -1,0 +1,187 @@
+{
+    "Actor": {
+        "types":
+        [
+            "Jugador",
+            "PNJ"
+        ],
+        "Jugador": {
+            "nt": 0,
+            "raza":"",
+            "sexo":"",
+            "edad":"",
+            "altura":"",
+            "peso":"",
+            "humanidad": 0,
+            "apariencia": "",
+            "estres": 0,
+            "locura": 0,
+            "corrupcion": 0,
+            "destino": 0,
+            "vigor": 0,
+            "voluntad": 0,
+            "bon_dano": 0,
+            "ini": 0,
+            "iniciativa": "",
+            "ac": 0,
+            "rdf": 0,
+            "rd": 0,
+            "esquiva": 0,
+            "mov": {
+                "mov": 0,
+                "turno": 0,
+                "minuto": 0,
+                "hora": 0
+            },
+            "resources":{
+                "heridastotal": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "heridas1": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "heridas2": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "heridas3": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "heridas4": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "heridas5": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatigatotal": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatiga1": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatiga2": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatiga3": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatiga4": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "fatiga5": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                },
+                "pd": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 0
+                }
+            },
+            "notes": ""
+        },
+        "PNJ": {
+            "resources":{
+                "effort": {
+                    "value": 3,
+                    "min": 0,
+                    "max": 3
+                }
+            },
+            "initiative": "0.99",
+            "traits": "",
+            "rank": 1,
+            "description": ""
+        }
+    },
+    "Item": {
+        "types":
+        [
+            "habilidad",
+            "aspecto",
+            "talento",
+            "don",
+            "limitacion",
+            "maniobra",
+            "objeto",
+            "arma"
+        ],
+        "habilidad": {
+            "entrenado": false,
+            "pd": 0,
+            "nivel": 0,
+            "nt": 0,
+            "desc": ""
+        },
+        "aspecto": {
+            "desc": ""
+        },
+        "talento": {
+            "efecto": "",
+            "pd": 0
+        },
+        "don": {
+            "efecto": "",
+            "pd": 0
+        },
+        "limitacion": {
+            "efecto": "",
+            "pd": 0
+        },
+        "maniobra": {
+            "tipo": "",
+            "ac": 0,
+            "ataque": false,
+            "marcial": false,
+            "defensa": false,
+            "don": false,
+            "efecto": ""
+        },
+        "objeto": {
+            "notas": "",
+            "estorbo": 0
+        },
+        "arma": {
+            "habilidad": "",
+            "nt": 0,
+            "dano": 0,
+            "alcance": {
+                "min": 0,
+                "efec": 0,
+                "max": 0
+            },
+            "recarga": 0,
+            "estorbo": 0,
+            "vigor_min": 0,
+            "manos": 1,
+            "cdf": "",
+            "cargador": 0,
+            "energia": "",
+            "notas": ""
+            
+        }
+    }
+
+}

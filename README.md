@@ -1,2 +1,4 @@
 # cdbe
-Sistema en Foundry para CDB Engine
+CDB Engine system for FoundryVTT
+
+

@@ -1,0 +1,21 @@
+<form class="{{cssClass}} cdbe" autocomplete="off">
+    <div class="item-name">
+        HABILIDAD
+        <h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2>
+        <table>
+            <tr>
+                <td><label>&nbsp;{{localize "CDBE.ui.entrenada"}}&nbsp;</label></td>
+                <td><input type="checkbox" {{checked item.system.entrenado}} name="system.entrenado"></td>
+                <td><label>&nbsp;{{localize "CDBE.ui.pd"}}&nbsp;</label></td>
+                <td><input name="system.pd" type="number" maxlength="2" size="2" value="{{item.system.pd}}" data-dtype="Number"/></td>
+                <td><label>&nbsp;{{localize "CDBE.ui.nivel"}}&nbsp;</label></td>
+                <td><input name="system.nivel" type="number" maxlength="2" size="2" value="{{item.system.nivel}}" data-dtype="Number"/></td>
+                <td><label>&nbsp;{{localize "CDBE.ui.nt"}}&nbsp;</label></td>
+                <td><input name="system.nt" type="number" maxlength="2" size="2" value="{{item.system.nt}}" data-dtype="Number"/></td>
+            </tr>
+        </table>
+    </div>
+    <div class="desc">
+        {{editor item.system.desc target="system.desc" button=true owner=owner editable=true}}
+    </div>
+</form>

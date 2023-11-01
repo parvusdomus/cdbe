@@ -1,0 +1,181 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <div class="charsheet">
+    <section class="left-section">
+      <div class="char-name"><h2><input name="name" type="text" value="{{actor.name}}" placeholder='Nombre' onClick="this.select();"/></h2></div>
+      <div class="char-pic"><img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{name}}" alt='Imagen del Personaje'/></div>
+      <div  class="charvalues">
+        <table>
+          <tr>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.bd"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.bon_dano}}</label></h3></td>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.rdf"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.rdf}}</label></h3></td>
+          </tr>
+          <tr>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.ini"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.ini}}</label></h3></td>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.rd"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.rd}}</label></h3></td>
+          </tr>
+          <tr>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.ac"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.ac}}</label></h3></td>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.esquiva"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.esquiva}}</label></h3></td>
+          </tr>
+          <tr>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.mov"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.mov.mov}}</label></h3></td>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.mov2"}}</label></h3></td>
+            <td class="charvalues_values"><h3><label>{{this.actor.system.mov.turno}}/{{this.actor.system.mov.minuto}}/{{this.actor.system.mov.hora}}</label></h3></td>
+          </tr>
+        </table>
+      </div>
+      <div class="resources">
+        <table>
+          <tr>
+            <td class="resources_label" style="width: 50%;"><h3><label>{{localize "CDBE.ui.heridas"}}</label></h3></td>
+            <td class="resources_label"><h3><label>{{localize "CDBE.ui.fatiga"}}</label></h3></td>
+          </tr>
+          <tr>
+            <td class="resources_odd">
+              {{#times actor.system.resources.heridas1.max}}
+                <a class="resource-change" data-resource="heridas1" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.heridas1.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}    
+            </td>
+            <td class="resources_odd">
+              {{#times actor.system.resources.fatiga1.max}}
+                <a class="resource-change" data-resource="fatiga1" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.fatiga1.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+          </tr>
+          <tr>
+            <td class="resources_even">
+              {{#times actor.system.resources.heridas2.max}}
+                <a class="resource-change" data-resource="heridas2" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.heridas2.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+            <td class="resources_even">
+              {{#times actor.system.resources.fatiga2.max}}
+                <a class="resource-change" data-resource="fatiga2" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.fatiga2.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+          </tr>
+          <tr>
+            <td class="resources_odd">
+              {{#times actor.system.resources.heridas3.max}}
+                <a class="resource-change" data-resource="heridas3" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.heridas3.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+            <td class="resources_odd">
+              {{#times actor.system.resources.fatiga3.max}}
+                <a class="resource-change" data-resource="fatiga3" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.fatiga3.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+          </tr>
+          <tr>
+            <td class="resources_even">
+              {{#times actor.system.resources.heridas4.max}}
+                <a class="resource-change" data-resource="heridas4" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.heridas4.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+            <td class="resources_even">
+              {{#times actor.system.resources.fatiga4.max}}
+                <a class="resource-change" data-resource="fatiga4" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.fatiga4.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+          </tr>
+          <tr>
+            <td class="resources_odd">
+              {{#times actor.system.resources.heridas5.max}}
+                <a class="resource-change" data-resource="heridas5" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.heridas5.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+            <td class="resources_odd">
+              {{#times actor.system.resources.fatiga5.max}}
+                <a class="resource-change" data-resource="fatiga5" data-number={{.}}>
+                  {{#if (gte . ../actor.system.resources.fatiga5.value)}}
+                    <i class="far fa-square"></i>
+                  {{else}}
+                    <i class="fas fa-check-square"></i>
+                  {{/if}}
+                </a>
+              {{/times}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="right-section">
+        <nav class="sheet-tabs tabs" data-group="primary">
+          <a class="item" data-tab="general">{{localize "CDBE.ui.tab.general"}}</a>
+          <a class="item" data-tab="bio">{{localize "CDBE.ui.tab.notes"}}</a>      
+        </nav>
+        {{!-- Item Sheet Body --}}
+        <section class="sheet-body">
+          {{!-- General Tab --}}
+          <div class="tab general" data-group="primary" data-tab="general">
+            {{> "/systems/cdbe/templates/actors/parts/habilidades.html"}}
+          </div>
+          {{!-- Notes Tab --}}
+          <div class="tab bio" data-group="primary" data-tab="bio">
+            {{editor actor.system.notes target="system.notes" button=true owner=owner editable=true}}
+          </div>
+        </section>
+    </section>
+  </div>
+</form>

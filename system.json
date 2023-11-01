@@ -1,0 +1,53 @@
+{
+    "id": "cdbe",
+    "title": "CDB Engine",
+    "description": "Game System for CDB Engine",
+    "version": "2.1.5",
+    "authors": [
+      {
+        "name": "ParvusDomus",
+        "flags": {}
+      }
+    ],
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11"
+    },
+    "esmodules": [
+      "cdbe.js"
+    ],
+    "styles": [
+      "style/cdbe.css"
+    ],
+    "media": [
+      {
+        "type": "setup",
+        "url": "systems/cdbe/style/images/CDBE_Logo.webp",
+        "thumbnail": "systems/cdbe/style/images/CDBE_Logo.webp"
+      }
+    ],
+  
+    "languages": [
+      {
+        "lang": "es",
+        "name": "Spanish",
+        "path": "lang/es.json",
+        "flags": {}
+      },
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json",
+        "flags": {}
+      }
+    ],
+    "initiative": "@initiative",
+    "gridDistance": 2,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "resources.resolve",
+    "secondaryTokenAttribute": "resources.karma",
+    "url": "https://github.com/parvusdomus/cdbe",
+    "manifest": "https://github.com/parvusdomus/cdbe/releases/latest/download/system.json",
+    "download": "https://github.com/parvusdomus/cdbe/releases/latest/download/cdbe.zip",
+    "license": "LICENSE.txt"
+  }
