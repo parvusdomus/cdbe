@@ -2,7 +2,6 @@ import CDBE_CHAR_SHEET from "./modules/cdbe_charsheet.js";
 import CDBE_NPC_SHEET from "./modules/cdbe_npcsheet.js";
 import CDBE_ITEM_SHEET from "./modules/cdbe_itemsheet.js";
 import { preloadHandlebarsTemplates } from "./modules/preloadTemplates.js";
-import DieRoller from "./modules/DieRoller.js";
 import {_getInitiativeFormula} from './modules/combat.js';
 import {diceToFaces} from "./modules/rolls.js";
 import cdbeChat from "./modules/chat.js";
@@ -36,12 +35,6 @@ Hooks.once("init", function(){
 
   console.log("test | INITIALIZING CDBE SETTINGS...");
 
-  game.settings.register("cdbe", "dieRollerPosition", {
-    scope: "client",
-    config: false,
-    default: null,
-    type: Object
-  });
 
   game.settings.register("cdbe", "enableRank", {
     name: game.i18n.localize("CDBE.config.enableRankName"),
@@ -249,36 +242,6 @@ Hooks.once("init", function(){
     default: '#AEB7BA',
   });
 
-  game.settings.register('cdbe', 'dieRollerFontColor', {
-    name: game.i18n.localize("CDBE.config.dieRollerFontColorName"),
-    hint: game.i18n.localize("CDBE.config.dieRollerFontColorHint"),
-    scope: 'world',
-    requiresReload: true,
-    config: true,
-    type: String,
-    default: '#395F64',
-  });
-
-  game.settings.register('cdbe', 'dieRollerButtonBgColor', {
-    name: game.i18n.localize("CDBE.config.dieRollerButtonBgColorName"),
-    hint: game.i18n.localize("CDBE.config.dieRollerButtonBgColorHint"),
-    scope: 'world',
-    requiresReload: true,
-    config: true,
-    type: String,
-    default: '#AEB7BA',
-  });
-
-  game.settings.register('cdbe', 'dieRollerButtonFontColor', {
-    name: game.i18n.localize("CDBE.config.dieRollerButtonFontColorName"),
-    hint: game.i18n.localize("CDBE.config.dieRollerButtonFontColorHint"),
-    scope: 'world',
-    requiresReload: true,
-    config: true,
-    type: String,
-    default: '#395F64',
-  });
-
   game.settings.register('cdbe', 'tabActiveBgColor', {
     name: game.i18n.localize("CDBE.config.tabActiveBgColorName"),
     hint: game.i18n.localize("CDBE.config.tabActiveBgColorHint"),
@@ -343,12 +306,6 @@ Hooks.once("init", function(){
   root.style.setProperty('--window-header-bg-color',windowHeaderBgColor) 
   let windowHeaderFontColor=game.settings.get ("cdbe", "windowHeaderFontColor")
   root.style.setProperty('--window-header-font-color',windowHeaderFontColor) 
-  let dieRollerFontColor=game.settings.get ("cdbe", "dieRollerFontColor")
-  root.style.setProperty('--die-roller-font-color',dieRollerFontColor) 
-  let dieRollerButtonFontColor=game.settings.get ("cdbe", "dieRollerButtonFontColor")
-  root.style.setProperty('--die-roller-button-font-color',dieRollerButtonFontColor) 
-  let dieRollerButtonBgColor=game.settings.get ("cdbe", "dieRollerButtonBgColor")
-  root.style.setProperty('--die-roller-button-bg-color',dieRollerButtonBgColor) 
   let tabActiveBgColor=game.settings.get ("cdbe", "tabActiveBgColor")
   root.style.setProperty('--tab-bg-color-active',tabActiveBgColor)
   let tabActiveFontColor=game.settings.get ("cdbe", "tabActiveFontColor")
@@ -386,12 +343,6 @@ Hooks.on("renderPause", () => {
   $("#pause figcaption").attr("class", "pause-cdbe");
 });
 
-Hooks.on('ready', () => {
-  new DieRoller(DieRoller.defaultOptions, { excludeTextLabels: true }).render(true);
-  
-})
-
-
 Hooks.on('renderSettingsConfig', (app, el, data) => {
   // Insert color picker input
   el.find('[name="cdbe.listHeaderBgColor"]').parent()
@@ -410,12 +361,6 @@ Hooks.on('renderSettingsConfig', (app, el, data) => {
     .append(`<input type="color" value="${game.settings.get('cdbe','windowHeaderBgColor')}" data-edit="cdbe.windowHeaderBgColor">`)
   el.find('[name="cdbe.windowHeaderFontColor"]').parent()
     .append(`<input type="color" value="${game.settings.get('cdbe','windowHeaderFontColor')}" data-edit="cdbe.windowHeaderFontColor">`)
-  el.find('[name="cdbe.dieRollerFontColor"]').parent()
-    .append(`<input type="color" value="${game.settings.get('cdbe','dieRollerFontColor')}" data-edit="cdbe.dieRollerFontColor">`)
-  el.find('[name="cdbe.dieRollerButtonBgColor"]').parent()
-    .append(`<input type="color" value="${game.settings.get('cdbe','dieRollerButtonBgColor')}" data-edit="cdbe.dieRollerButtonBgColor">`)
-  el.find('[name="cdbe.dieRollerButtonFontColor"]').parent()
-    .append(`<input type="color" value="${game.settings.get('cdbe','dieRollerButtonFontColor')}" data-edit="cdbe.dieRollerButtonFontColor">`)
   el.find('[name="cdbe.tabActiveBgColor"]').parent()
     .append(`<input type="color" value="${game.settings.get('cdbe','tabActiveBgColor')}" data-edit="cdbe.tabActiveBgColor">`)
   el.find('[name="cdbe.tabActiveFontColor"]').parent()
