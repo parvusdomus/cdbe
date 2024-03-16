@@ -26,7 +26,15 @@
           <tr>
             <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.mov"}}</label></h3></td>
             <td class="charvalues_values"><h3><label>{{this.actor.system.mov.mov}}</label></h3></td>
-            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.mov2"}}</label></h3></td>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.destino"}}</label></h3></td>
+            <td class="charvalues_values"><h3>
+              <input name="system.destino" type="number" maxlength="2" size="2" value="{{actor.system.destino}}" data-dtype="Number"/>
+            </h3></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="charvalues_label"><h3><label>{{localize "CDBE.ui.mov"}}({{localize "CDBE.ui.mov2"}})</label></h3></td>
             <td class="charvalues_values"><h3><label>{{this.actor.system.mov.turno}}/{{this.actor.system.mov.minuto}}/{{this.actor.system.mov.hora}}</label></h3></td>
           </tr>
         </table>
@@ -162,14 +170,45 @@
     </section>
     <section class="right-section">
         <nav class="sheet-tabs tabs" data-group="primary">
-          <a class="item" data-tab="general">{{localize "CDBE.ui.tab.general"}}</a>
-          <a class="item" data-tab="bio">{{localize "CDBE.ui.tab.notes"}}</a>      
+          <table>
+            <tr>
+              <td><a class="item" data-tab="general">{{localize "CDBE.ui.tab.general"}}</a></td>
+              <td><a class="item" data-tab="inventario">{{localize "CDBE.ui.tab.inventario"}}</a></td>
+              <td><a class="item" data-tab="talentos">{{localize "CDBE.ui.tab.talentos"}}</a></td>
+              <td><a class="item" data-tab="dones">{{localize "CDBE.ui.tab.dones"}}</a></td>
+            </tr>
+            <tr>
+              <td><a class="item" data-tab="maniobras">{{localize "CDBE.ui.tab.maniobras"}}</a></td>
+              <td><a class="item" data-tab="efectos">{{localize "CDBE.ui.tab.efectos"}}</a></td>
+              <td><a class="item" data-tab="bio">{{localize "CDBE.ui.tab.notes"}}</a></td>
+            </tr>
+          </table>
         </nav>
         {{!-- Item Sheet Body --}}
         <section class="sheet-body">
           {{!-- General Tab --}}
           <div class="tab general" data-group="primary" data-tab="general">
             {{> "/systems/cdbe/templates/actors/parts/habilidades.html"}}
+          </div>
+          {{!-- Inventory Tab --}}
+          <div class="tab inventario" data-group="primary" data-tab="inventario">
+            {{> "/systems/cdbe/templates/actors/parts/inventario.html"}}
+          </div>
+          {{!-- Talentos Tab --}}
+          <div class="tab talentos" data-group="primary" data-tab="talentos">
+            {{> "/systems/cdbe/templates/actors/parts/talentos.html"}}
+          </div>
+          {{!-- Dones Tab --}}
+          <div class="tab dones" data-group="primary" data-tab="dones">
+            {{> "/systems/cdbe/templates/actors/parts/dones.html"}}
+          </div>
+          {{!-- Maniobras Tab --}}
+          <div class="tab maniobras" data-group="primary" data-tab="maniobras">
+            {{> "/systems/cdbe/templates/actors/parts/maniobras.html"}}
+          </div>
+          {{!-- Efectos Tab --}}
+          <div class="tab efectos" data-group="primary" data-tab="efectos">
+            {{> "/systems/cdbe/templates/actors/parts/efectos.html"}}
           </div>
           {{!-- Notes Tab --}}
           <div class="tab bio" data-group="primary" data-tab="bio">

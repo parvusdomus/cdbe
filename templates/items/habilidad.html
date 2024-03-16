@@ -1,6 +1,5 @@
 <form class="{{cssClass}} cdbe" autocomplete="off">
-    <div class="item-name">
-        HABILIDAD
+    <div class="item">
         <h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2>
         <table>
             <tr>
@@ -15,7 +14,7 @@
             </tr>
         </table>
     </div>
-    <div class="desc">
+    <div class="desc skillnotes">
         {{editor item.system.desc target="system.desc" button=true owner=owner editable=true}}
     </div>
 </form>

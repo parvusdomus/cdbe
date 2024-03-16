@@ -4,7 +4,7 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
           classes: ["cdbe", "sheet", "actor"],
           template: "systems/cdbe/templates/actors/character.html",
           width: 700,
-          height: 700,
+          height: 670,
           tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "general" }],
           scrollY: ['section.sheet-body']
         });
@@ -23,6 +23,13 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
     _prepareCharacterItems(sheetData){
       const actorData = sheetData;
       const Habilidades = [];
+      const Talentos = [];
+      const Limitaciones = [];
+      const Aspectos = [];
+      const Dones = [];
+      const Armas = [];
+      const Armaduras = [];
+      const Objetos = [];
       for (let i of sheetData.items){
         switch (i.type){
 				  case 'habilidad':
@@ -30,9 +37,51 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
 					  Habilidades.push(i);
 					  break;
 				  }
+          case 'talento':
+				  {
+					  Talentos.push(i);
+					  break;
+				  }
+          case 'limitacion':
+				  {
+					  Limitaciones.push(i);
+					  break;
+				  }
+          case 'aspecto':
+				  {
+					  Aspectos.push(i);
+					  break;
+				  }
+          case 'don':
+				  {
+					  Dones.push(i);
+					  break;
+				  }
+          case 'arma':
+				  {
+					  Armas.push(i);
+					  break;
+				  }
+          case 'objeto':
+				  {
+					  Objetos.push(i);
+					  break;
+				  }
+          case 'armadura':
+				  {
+					  Armaduras.push(i);
+					  break;
+				  }
         }
       }
       actorData.Habilidades = Habilidades;
+      actorData.Talentos = Talentos;
+      actorData.Limitaciones = Limitaciones;
+      actorData.Aspectos = Aspectos;
+      actorData.Dones = Dones;
+      actorData.Armas = Armas;
+      actorData.Armaduras = Armaduras;
+      actorData.Objetos = Objetos;
       //this.actor.update ({ 'system.resources.afflictions.value': nAfflictions });
       actorData.settings = {
         //enableKnacks: game.settings.get("cdbe", "enableKnacks")
@@ -213,8 +262,8 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       const dataset = event.currentTarget.dataset;
       console.log ("dataset")
       Dialog.confirm({
-        title: game.i18n.localize("TRI.ui.deleteTitle"),
-			  content: game.i18n.localize("TRI.ui.deleteText"),
+        title: game.i18n.localize("CDBE.ui.deleteTitle"),
+			  content: game.i18n.localize("CDBE.ui.deleteText"),
         yes: () => this.actor.deleteEmbeddedDocuments("Item", [dataset.id]),
         no: () => {},
         defaultYes: false

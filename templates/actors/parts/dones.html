@@ -1,15 +1,15 @@
 <table class="item-list">
     <tr>
-        <th><h3 class="item-header"><label>{{localize "CDBE.ui.habilidades"}}</label></h3></th>
+        <th><h3 class="item-header"><label>{{localize "CDBE.ui.dones"}}</label></h3></th>
         <th><h3 class="item-header"><label>{{localize "CDBE.ui.entrenado"}}</label></h3></th>
         <th><h3 class="item-header"><label>{{localize "CDBE.ui.pd"}}</label></h3></th>
         <th><h3 class="item-header"><label>{{localize "CDBE.ui.nivel"}}</label></h3></th>
         <th><h3 class="item-header"><label>{{localize "CDBE.ui.nt"}}</label></h3></th>
         <th class="item-controls">
-            <a class="item-create" data-type="habilidad"><i class="fas fa-plus"></i></a>
+            <a class="item-create" data-type="don"><i class="fas fa-plus"></i></a>
         </th>
     </tr>
-    {{#each Habilidades as |item id|}}
+    {{#each Dones as |item id|}}
         <tr data-item-id="{{item._id}}">
             <td>
                 <label>{{item.name}}</label>

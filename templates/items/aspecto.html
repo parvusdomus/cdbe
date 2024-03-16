@@ -1,0 +1,25 @@
+<form class="{{cssClass}} cdbe" autocomplete="off">
+    <div class="item">
+        <h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2>
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <td><a class="item" data-tab="descripcion">{{localize "CDBE.ui.tab.descripcion"}}</a></td>
+            <td><a class="item" data-tab="aplicar">{{localize "CDBE.ui.tab.aplicacion"}}</a></td>
+            <td><a class="item" data-tab="invocar">{{localize "CDBE.ui.tab.invocacion"}}</a></td>
+        </nav>
+    </div>
+    {{!-- Item Sheet Body --}}
+        <section class="sheet-body">
+          {{!-- General Tab --}}
+          <div class="tab descripcion desc aspectnotes" data-group="primary" data-tab="descripcion">
+            {{editor item.system.desc target="system.desc" button=true owner=owner editable=true}}
+          </div>
+          {{!-- Inventory Tab --}}
+          <div class="tab aplicar desc aspectnotes" data-group="primary" data-tab="aplicar">
+            {{editor item.system.aplicacion target="system.aplicacion" button=true owner=owner editable=true}}
+          </div>
+          {{!-- Talentos Tab --}}
+          <div class="tab invocar desc aspectnotes" data-group="primary" data-tab="invocar">
+            {{editor item.system.invocacion target="system.invocacion" button=true owner=owner editable=true}}
+          </div>
+        </section>
+</form>

@@ -136,18 +136,23 @@
             "desc": ""
         },
         "aspecto": {
-            "desc": ""
+            "desc": "",
+            "invocacion": "",
+            "aplicacion": ""
         },
         "talento": {
-            "efecto": "",
+            "requisito": "",
+            "desc": "",
             "pd": 0
         },
         "don": {
-            "efecto": "",
+            "origen": "",
+            "habilidad": "",
+            "desc": "",
             "pd": 0
         },
         "limitacion": {
-            "efecto": "",
+            "desc": "",
             "pd": 0
         },
         "maniobra": {

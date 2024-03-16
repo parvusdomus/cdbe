@@ -8,200 +8,6 @@
     src: url("../../../systems/cdbe/style/fonts/zekton.otf");
 }
 
-@font-face {
-    font-family: "Dominican";
-    src: url("../../../systems/cdbe/style/fonts/Dominican.ttf");
-}
-
-@font-face {
-    font-family: "Almendrasc";
-    src: url("../../../systems/cdbe/style/fonts/Almendrasc.ttf");
-}
-
-@font-face {
-    font-family: "Amble";
-    src: url("../../../systems/cdbe/style/fonts/Amble.ttf");
-}
-
-@font-face {
-    font-family: "Bagnard";
-    src: url("../../../systems/cdbe/style/fonts/Bagnard.otf");
-}
-
-@font-face {
-    font-family: "Arkhip";
-    src: url("../../../systems/cdbe/style/fonts/Arkhip.ttf");
-}
-
-@font-face {
-    font-family: "Bangers";
-    src: url("../../../systems/cdbe/style/fonts/Bangers.ttf");
-}
-
-@font-face {
-    font-family: "Berry";
-    src: url("../../../systems/cdbe/style/fonts/Berry.ttf");
-}
-
-@font-face {
-    font-family: "BLACC";
-    src: url("../../../systems/cdbe/style/fonts/BLACC.ttf");
-}
-
-@font-face {
-    font-family: "BLOODY";
-    src: url("../../../systems/cdbe/style/fonts/BLOODY.ttf");
-}
-
-@font-face {
-    font-family: "Cinzel";
-    src: url("../../../systems/cdbe/style/fonts/Cinzel.otf");
-}
-
-@font-face {
-    font-family: "Corleone";
-    src: url("../../../systems/cdbe/style/fonts/Corleone.TTF");
-}
-
-@font-face {
-    font-family: "Creepster";
-    src: url("../../../systems/cdbe/style/fonts/Creepster.ttf");
-}
-
-@font-face {
-    font-family: "Duvall";
-    src: url("../../../systems/cdbe/style/fonts/Duvall.ttf");
-}
-
-@font-face {
-    font-family: "East_Anglia";
-    src: url("../../../systems/cdbe/style/fonts/East_Anglia.ttf");
-}
-
-@font-face {
-    font-family: "Foul";
-    src: url("../../../systems/cdbe/style/fonts/Foul.ttf");
-}
-
-@font-face {
-    font-family: "Headhunter";
-    src: url("../../../systems/cdbe/style/fonts/Headhunter.ttf");
-}
-
-@font-face {
-    font-family: "IMMORTAL";
-    src: url("../../../systems/cdbe/style/fonts/IMMORTAL.ttf");
-}
-
-@font-face {
-    font-family: "IMPOS5";
-    src: url("../../../systems/cdbe/style/fonts/IMPOS5.ttf");
-}
-
-@font-face {
-    font-family: "Mandalore_Halftone";
-    src: url("../../../systems/cdbe/style/fonts/Mandalore_Halftone.ttf");
-}
-
-@font-face {
-    font-family: "mandalore";
-    src: url("../../../systems/cdbe/style/fonts/mandalore.ttf");
-}
-
-@font-face {
-    font-family: "MetalMacabre";
-    src: url("../../../systems/cdbe/style/fonts/MetalMacabre.ttf");
-}
-
-@font-face {
-    font-family: "MountainsofChristmas";
-    src: url("../../../systems/cdbe/style/fonts/MountainsofChristmas.ttf");
-}
-
-@font-face {
-    font-family: "MysteryQuest";
-    src: url("../../../systems/cdbe/style/fonts/MysteryQuest.ttf");
-}
-
-@font-face {
-    font-family: "Nautilus";
-    src: url("../../../systems/cdbe/style/fonts/Nautilus.otf");
-}
-
-@font-face {
-    font-family: "OhioKraft";
-    src: url("../../../systems/cdbe/style/fonts/OhioKraft.otf");
-}
-
-@font-face {
-    font-family: "Orbitron";
-    src: url("../../../systems/cdbe/style/fonts/Orbitron.ttf");
-}
-
-@font-face {
-    font-family: "pirulen";
-    src: url("../../../systems/cdbe/style/fonts/pirulen.otf");
-}
-
-@font-face {
-    font-family: "RexliaRg";
-    src: url("../../../systems/cdbe/style/fonts/RexliaRg.ttf");
-}
-
-@font-face {
-    font-family: "RifficFree";
-    src: url("../../../systems/cdbe/style/fonts/RifficFree.ttf");
-}
-
-@font-face {
-    font-family: "Saddlebag";
-    src: url("../../../systems/cdbe/style/fonts/Saddlebag.ttf");
-}
-
-@font-face {
-    font-family: "Skia";
-    src: url("../../../systems/cdbe/style/fonts/Skia.ttf");
-}
-
-@font-face {
-    font-family: "Starjedi";
-    src: url("../../../systems/cdbe/style/fonts/Starjedi.ttf");
-}
-
-@font-face {
-    font-family: "TradeWinds";
-    src: url("../../../systems/cdbe/style/fonts/TradeWinds.ttf");
-}
-
-@font-face {
-    font-family: "Werewolf_Moon";
-    src: url("../../../systems/cdbe/style/fonts/Werewolf_Moon.ttf");
-}
-
-@font-face {
-    font-family: "WHITC";
-    src: url("../../../systems/cdbe/style/fonts/WHITC.ttf");
-}
-
-@font-face {
-    font-family: "WIZARDRY";
-    src: url("../../../systems/cdbe/style/fonts/WIZARDRY.ttf");
-}
-
-@font-face {
-    font-family: "xirod";
-    src: url("../../../systems/cdbe/style/fonts/xirod.otf");
-}
-
-@font-face {
-    font-family: "Yataghan";
-    src: url("../../../systems/cdbe/style/fonts/Yataghan.otf");
-}
-
-@font-face {
-    font-family: "StoneAge";
-    src: url("../../../systems/cdbe/style/fonts/StoneAge.otf");
-}
 .charsheet {
     display: flex;
   }
@@ -214,13 +20,13 @@
 
 .left-section h2{
     font-family: var(--font-name);
-    color: var(--header-font-color);
+    color: var(--secondary-color);
     border-bottom: none;
 }
 
 .char-pic img{
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: var(--list-header-color);
+    background-color: var(--main-color);
     width: 200px;
     height: 175px;
 }
@@ -228,8 +34,8 @@
 .char-name input{
     font-family: var(--font-name);
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
+    background-color: var(--secondary-color);
+    color: var(--main-color);
     border: none;
 }
 
@@ -260,16 +66,28 @@
 
 .sheet .tabs .item.active {
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
-    background: var(--tab-bg-color-active);
-    color: var(--tab-text-color-active);
+    background: var(--main-color);
+    color: var(--secondary-color);
     text-shadow: none;
 }
 
 .sheet .tabs .item:not(.active) {
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
-    background: var(--tab-bg-color-hover);
-    color: var(--tab-text-color-hover);
+    background: var(--secondary-color);
+    color: var(--main-color);
     text-shadow: none;
+}
+
+.sheet .tabs table {
+    border-top: none;
+    border-bottom: none; 
+    background: none;
+
+}
+
+.sheet .tabs tr {
+    line-height: 30px;
+
 }
 
 .right-section {
@@ -277,73 +95,40 @@
     height: 100%;
 }
 
-.editor-content, .editor, .tox,.tox-edit-area, .tox-tinymce
+.editor {
+    height: 100%;
+}
+.editor-content
 {
     list-style: circle;
     text-align: left;
     padding: 5px;
-    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
-	background-color: var(--input-bg-color);
-    color: #000000;
-    height: 500px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
 }
 
-.archetype {
-    list-style: none;
-    margin: -0.5em 0px;
-    padding: 0px 0px 0px 0.5em;
+.skillnotes {
+    height: 225px;
 }
 
-.archetype h1 {
-    color: var(--header-font-color);
-    font-family: var(--font-name);
-    border-bottom: none;
+.aspectnotes {
+    height: 225px;
 }
 
-.archetype li {
-    display: inline-block;
-    padding: 5px 1px;
-    vertical-align: middle;
+.talentnotes {
+    height: 165px;
 }
 
-.archetype img {
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin: auto;
+.limitanotes {
+    height: 205px;
 }
 
-.archetype input {
-    width: 155%;
-    border-radius: 16px;
-    text-align: center;
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
+.donnotes {
+    height: 132px;
 }
 
-.npctag {
-    list-style: none;
-    margin: -0.5em 0px;
-    padding: 0px 0px 0px 0.5em;
-}
-
-.npctag h1 {
-    color: var(--header-font-color);
-    border-bottom: none;
-}
-
-.npctag li {
-    display: inline-block;
-    padding: 5px 1px;
-    vertical-align: middle;
-}
-
-.npctag input {
-    width: 200%;
-    border-radius: 16px;
-    text-align: center;
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
+.bio {
+    height: 522px;
 }
 
 .item-list {
@@ -356,10 +141,9 @@
 }
 
 .item-list th{
-    border: none;
-    
-    background-color: var(--list-header-color);
-    color: var(--list-header-font-color);
+    border: none; 
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     padding-left: 10px;
     padding-right: 8px;
     
@@ -372,7 +156,7 @@
     display: table-cell;
 }
 .item-list td{
-    color: var(--list-text-color);
+    color: var(--main-color);
 }
 
 .item-controls {
@@ -380,26 +164,28 @@
     text-align: right;
 }
 
-.item-name input{
-    border-radius: 16px; 
+.item input{
     text-align: center;
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
+    border: none;
 }
 
-.item-name h2{
-    color: var(--header-font-color);
+.item h2{
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
 }
 
-.dice-roll .dice-tooltip {
-    display: block !important;
+.item table{
+    background: none;
+    border: none;
 }
 
-.tag li{
-    display: inline-block;
+.dice-roll .dice-tooltip {
+    display: block !important;
 }
 
 #pause .pause-image {
@@ -425,27 +211,8 @@
     --bg-image: url("../../../systems/cdbe/style/images/white.webp");
     --chat-bg-image: url("../../../systems/cdbe/style/images/white.webp");
     --font-name: "Zekton";
-    --main-font-color: #395F64;
-    --header-font-color: #AEB7BA;
-    --list-header-font-color: #AEB7BA;
-    --list-header-color: #395F64;
-    --input-bg-color: #AEB7BA;
-    --list-text-color: #395F64;
-    --input-text-color: #395F64;
-    --window-header-bg-color: #395F64;
-    --window-header-font-color: #AEB7BA;
-    --die-roller-button-bg-color: #AEB7BA;
-    --die-roller-button-font-color: #395F64;
-    --die-roller-font-color: #395F64;
-    --tab-bg-color-active: #395F64;
-    --tab-bg-color-hover: #AEB7BA;
-    --tab-text-color-active: #AEB7BA;
-    --tab-text-color-hover: #395F64;
-
-}
-
-.cdbe{  
-
+    --main-color: #395F64;
+    --secondary-color: #AEB7BA;
 }
 
 .cdbe .window-content{
@@ -468,89 +235,9 @@
     text-align: center;
 }
 
-#die-roller-move-handle{
-    z-index: 101;
-    font-size: 1px;
-    line-height: 100%;
-    position: absolute;
-    top: 0;
-    bottom:0;
-    left: 0;
-    width: 10px;
-    background: rgba(51, 51, 51, 0.8);
-}
-
-
-.die-roller .window-header
-{
-    display: none;
-    visibility: hidden;
-    height: 0;
-}
-
-.die-roller h2{
-    font-family: var(--font-name);
-    color: var(--die-roller-font-color);
-    border-bottom: none;
-    text-align: center;
-    
-}
-
-.die-roller button{
-    color: var(--die-roller-button-font-color);
-    background-color: var(--die-roller-button-bg-color);
-}
-
 .d-flex{
     display:flex!important;
     align-items: center;
-}
-
-.die-roller input{
-    font-family: var(--font-name);
-    border-radius: 16px; 
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
-    font-size: 1em;
-    text-align: center;
-}
-
-.subtrait {
-    list-style: none;
-    margin: -0.5em 0px;
-    padding: 0px 0px 0px 0.5em;
-}
-
-.subtrait h1 {
-    color: var(--header-font-color);
-    font-family: var(--font-name);
-    border-bottom: none;
-}
-
-.subtrait li {
-    display: inline-block;
-    padding: 5px 1px;
-    vertical-align: middle;
-}
-
-.subtrait img {
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin: auto;
-}
-
-.subtable {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.subtable tr:nth-child(even){
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.subtable tr:nth-child(odd){
-    background-color: rgba(255, 255, 255, 0);
 }
 
 .regular-success {
@@ -604,7 +291,7 @@
 }
 
 .charvalues_label h3{
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
@@ -612,12 +299,20 @@
 }
 
 .charvalues_values h3{
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
-    background-color: var(--input-bg-color);
+    background-color: var(--secondary-color);
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 89% 100%, 10% 100%, 0% 50%);
+}
+
+.charvalues_values input{
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-family: var(--font-name);
+    width: 10px;
 }
 
 .resources table{
@@ -626,7 +321,7 @@
 }
 
 .resources_label h3{
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
@@ -634,26 +329,27 @@
 }
 
 .resources_values h3{
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
-    background-color: var(--input-bg-color);
+    background-color: var(--secondary-color);
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 89% 100%, 10% 100%, 0% 50%);
 }
 
 .resources_odd {
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
-    background-color: var(--input-bg-color);
+    background-color: var(--secondary-color);
 }
 
 .resources_even {
-    color: var(--header-font-color);
+    color: var(--main-color);
     font-family: var(--font-name);
     text-align: center;
     border-bottom: none;
     background: none;
 }
+

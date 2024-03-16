@@ -4,7 +4,8 @@ export default class CDBE_ITEM_SHEET extends ItemSheet{
           classes: ["cdbe", "sheet", "item"],
           template: "systems/cdbe/templates/actors/character.html",
           width: 400,
-          height: 530
+          height: 350,
+          tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "general" }]
         });
   
     }

@@ -1,0 +1,26 @@
+<form class="{{cssClass}} cdbe" autocomplete="off">
+    <div class="item">
+        <table>
+          <tr>
+              <td><h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2></td>
+              <td><label>&nbsp;{{localize "CDBE.ui.pd"}}&nbsp;</label></td>
+              <td style="width:20px;"><input name="system.pd" type="number" maxlength="2" size="2" value="{{item.system.pd}}" data-dtype="Number"/></td>
+          </tr>
+      </table>
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <td><a class="item" data-tab="descripcion">{{localize "CDBE.ui.tab.descripcion"}}</a></td>
+            <td><a class="item" data-tab="efectos">{{localize "CDBE.ui.tab.efectos"}}</a></td>
+        </nav>
+    </div>
+    {{!-- Item Sheet Body --}}
+        <section class="sheet-body">
+          {{!-- Descripcion Tab --}}
+          <div class="tab descripcion desc limitanotes" data-group="primary" data-tab="descripcion">
+            {{editor item.system.desc target="system.desc" button=true owner=owner editable=true}}
+          </div>
+          {{!-- Efectos Tab --}}
+          <div class="tab efectos desc limitanotes" data-group="primary" data-tab="efectos">
+
+          </div>
+        </section>
+</form>
