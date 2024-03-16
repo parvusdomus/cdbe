@@ -126,7 +126,8 @@
             "limitacion",
             "maniobra",
             "objeto",
-            "arma"
+            "arma",
+            "armadura"
         ],
         "habilidad": {
             "entrenado": false,
@@ -184,6 +185,12 @@
             "cdf": "",
             "cargador": 0,
             "energia": "",
+            "notas": ""
+            
+        },
+        "armadura": {
+            "nt": 0,
+            "estorbo": 0,
             "notas": ""
             
         }
