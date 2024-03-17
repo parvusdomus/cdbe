@@ -150,6 +150,7 @@
             "origen": "",
             "habilidad": "",
             "desc": "",
+            "fatiga": false,
             "pd": 0
         },
         "limitacion": {

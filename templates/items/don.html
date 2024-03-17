@@ -12,10 +12,12 @@
           <tr>
               <td><h2><label>&nbsp;{{localize "CDBE.ui.origen"}}&nbsp;</label></h2></td>
               <td><input name="system.origen" value="{{item.system.origen}}" type="text"/></td>
+              <td><h2><label>&nbsp;{{localize "CDBE.ui.fatiga"}}&nbsp;</label></h2></td>
           </tr>
           <tr>
             <td><h2><label>&nbsp;{{localize "CDBE.ui.habilidad"}}&nbsp;</label></h2></td>
             <td><input name="system.habilidad" value="{{item.system.habilidad}}" type="text"/></td>
+            <td><h2><input type="checkbox" {{checked item.system.fatiga}} name="system.fatiga"></h2></td>
         </tr>
       </table>
         <nav class="sheet-tabs tabs" data-group="primary">
