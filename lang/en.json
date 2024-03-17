@@ -60,6 +60,8 @@
     "CDBE.ui.armaduras": "Armors",
     "CDBE.ui.armas": "Weapons",
     "CDBE.ui.objetos": "Items",
+    "CDBE.ui.estorbo": "Enc.",
+    "CDBE.ui.coste": "Price",
 
 
     "CDBE.config.bgImageName": "Background Image",

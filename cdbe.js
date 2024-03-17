@@ -24,7 +24,7 @@ Hooks.once("init", function(){
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("cdbe", CDBE_ITEM_SHEET,{
     makeDefault: true,
-    types: ['habilidad','aspecto','don','talento', 'limitacion', 'arma', 'objeto']
+    types: ['habilidad','aspecto','don','talento', 'limitacion', 'arma', 'objeto', 'armadura']
   });
   preloadHandlebarsTemplates();
 

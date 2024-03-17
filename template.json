@@ -191,9 +191,12 @@
         },
         "armadura": {
             "nt": 0,
+            "equipado": false,
             "estorbo": 0,
+            "ac": 0,
+            "rd": 0,
+            "coste": 0,
             "notas": ""
-            
         }
     }
 

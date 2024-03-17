@@ -194,6 +194,7 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
 		  html.find('a.item-delete').click(this._onDeleteClick.bind(this));
       html.find('a.entrenado-toggle').click(this._onEntrenadoToggle.bind(this));
       html.find('a.fatiga-toggle').click(this._onFatigaToggle.bind(this));
+      html.find('a.item-equip').click(this._onEquipToggle.bind(this));
       html.find('a.dice-roll').click(this._onDiceRoll.bind(this));
       html.find('a.resource-change').click(this._onResourceChange.bind(this));
     }
@@ -267,6 +268,20 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       }
       else{
         item.update ({ 'system.fatiga': true });
+      }
+		  return;
+    }
+
+    async _onEquipToggle(event, data)
+	  {
+      event.preventDefault();
+		  const dataset = event.currentTarget.dataset;
+		  const item = this.actor.items.get(dataset.id);
+      if (item.system.equipado==true){
+        item.update ({ 'system.equipado': false });
+      }
+      else{
+        item.update ({ 'system.equipado': true });
       }
 		  return;
     }

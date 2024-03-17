@@ -60,6 +60,8 @@
     "CDBE.ui.armaduras": "Armaduras",
     "CDBE.ui.armas": "Armas",
     "CDBE.ui.objetos": "Objetos",
+    "CDBE.ui.estorbo": "Est.",
+    "CDBE.ui.coste": "Coste",
 
 
     "CDBE.config.bgImageName": "Imagen de Fondo",
