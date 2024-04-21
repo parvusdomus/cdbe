@@ -1,0 +1,39 @@
+<form class="{{cssClass}} cdbe" autocomplete="off">
+    <div class="item">
+        
+        <table>
+          <tr>
+            <td><h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2></td>
+            <td><h2><label>&nbsp;{{localize "CDBE.ui.nt"}}&nbsp;</label></h2></td>
+            <td style="width:40px;"><h2><input name="system.nt" type="number" maxlength="2" size="2" value="{{item.system.nt}}" data-dtype="Number"/></h2></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><h2><label>&nbsp;{{localize "CDBE.ui.rd"}}&nbsp;</label></h2></td>
+            <td><h2><input name="system.rd" type="number" maxlength="2" size="2" value="{{item.system.rd}}" data-dtype="Number"/></h2></td>
+            <td><h2><label>&nbsp;{{localize "CDBE.ui.ac"}}&nbsp;</label></h2></td>
+            <td><h2><input name="system.ac" type="number" maxlength="2" size="2" value="{{item.system.ac}}" data-dtype="Number"/></h2></td>
+            <td><h2><label>&nbsp;{{localize "CDBE.ui.estorbo"}}&nbsp;</label></h2></td>
+            <td><h2><input name="system.estorbo" type="number" maxlength="2" size="2" value="{{item.system.estorbo}}" data-dtype="Number"/></h2></td>
+            <td><h2><label>&nbsp;{{localize "CDBE.ui.coste"}}&nbsp;</label></h2></td>
+            <td><h2><input name="system.coste" type="number" maxlength="2" size="2" value="{{item.system.coste}}" data-dtype="Number"/></h2></td>
+          </tr>
+      </table>
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <td><a class="item" data-tab="descripcion">{{localize "CDBE.ui.tab.descripcion"}}</a></td>
+            <td><a class="item" data-tab="efectos">{{localize "CDBE.ui.tab.efectos"}}</a></td>
+        </nav>
+    </div>
+    {{!-- Item Sheet Body --}}
+        <section class="sheet-body">
+          {{!-- Descripcion Tab --}}
+          <div class="tab descripcion desc armornotes" data-group="primary" data-tab="descripcion">
+            {{editor item.system.desc target="system.desc" button=true owner=owner editable=true}}
+          </div>
+          {{!-- Efectos Tab --}}
+          <div class="tab efectos desc donnotes" data-group="primary" data-tab="efectos">
+
+          </div>
+        </section>
+</form>

@@ -168,10 +168,13 @@
         },
         "objeto": {
             "notas": "",
+            "nt": 0,
+            "coste": 0,
             "estorbo": 0
         },
         "arma": {
             "habilidad": "",
+            "equipado": false,
             "nt": 0,
             "dano": 0,
             "alcance": {
