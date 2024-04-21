@@ -176,19 +176,19 @@
             "habilidad": "",
             "equipado": false,
             "nt": 0,
+            "estorbo": 0,
+            "vigor_min": 0,
+            "manos": 1,
             "dano": 0,
+            "cdf": "",
+            "cargador": 0,
+            "recarga": 0,
+            "energia": "",
             "alcance": {
                 "min": 0,
                 "efec": 0,
                 "max": 0
             },
-            "recarga": 0,
-            "estorbo": 0,
-            "vigor_min": 0,
-            "manos": 1,
-            "cdf": "",
-            "cargador": 0,
-            "energia": "",
             "notas": ""
             
         },

@@ -1,26 +1,9 @@
 <form class="{{cssClass}} cdbe" autocomplete="off">
     <div class="item">
         
-        <table>
-          <tr>
-            <td><h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2></td>
-            <td><h2><label>&nbsp;{{localize "CDBE.ui.nt"}}&nbsp;</label></h2></td>
-            <td style="width:40px;"><h2><input name="system.nt" type="number" maxlength="2" size="2" value="{{item.system.nt}}" data-dtype="Number"/></h2></td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td><h2><label>&nbsp;{{localize "CDBE.ui.rd"}}&nbsp;</label></h2></td>
-            <td><h2><input name="system.rd" type="number" maxlength="2" size="2" value="{{item.system.rd}}" data-dtype="Number"/></h2></td>
-            <td><h2><label>&nbsp;{{localize "CDBE.ui.ac"}}&nbsp;</label></h2></td>
-            <td><h2><input name="system.ac" type="number" maxlength="2" size="2" value="{{item.system.ac}}" data-dtype="Number"/></h2></td>
-            <td><h2><label>&nbsp;{{localize "CDBE.ui.estorbo"}}&nbsp;</label></h2></td>
-            <td><h2><input name="system.estorbo" type="number" maxlength="2" size="2" value="{{item.system.estorbo}}" data-dtype="Number"/></h2></td>
-            <td><h2><label>&nbsp;{{localize "CDBE.ui.coste"}}&nbsp;</label></h2></td>
-            <td><h2><input name="system.coste" type="number" maxlength="2" size="2" value="{{item.system.coste}}" data-dtype="Number"/></h2></td>
-          </tr>
-      </table>
+        
         <nav class="sheet-tabs tabs" data-group="primary">
+            <td><a class="item" data-tab="general">{{localize "CDBE.ui.tab.general2"}}</a></td>
             <td><a class="item" data-tab="descripcion">{{localize "CDBE.ui.tab.descripcion"}}</a></td>
             <td><a class="item" data-tab="efectos">{{localize "CDBE.ui.tab.efectos"}}</a></td>
         </nav>
@@ -34,6 +17,57 @@
           {{!-- Efectos Tab --}}
           <div class="tab efectos desc donnotes" data-group="primary" data-tab="efectos">
 
+          </div>
+          <div class="tab general" data-group="primary" data-tab="general">
+            <table>
+              <tr>
+                <td><h2><input name="name" type="text" value="{{item.name}}" placeholder='Quirk' onClick="this.select();"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.nt"}}&nbsp;</label></h2></td>
+                <td style="width:40px;"><h2><input name="system.nt" type="number" maxlength="2" size="2" value="{{item.system.nt}}" data-dtype="Number"/></h2></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.estorbo"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.estorbo" type="number" maxlength="2" size="2" value="{{item.system.estorbo}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.vigormin"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.vigor_min" type="number" maxlength="2" size="2" value="{{item.system.vigor_min}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.manos"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.manos" type="number" maxlength="2" size="2" value="{{item.system.manos}}" data-dtype="Number"/></h2></td>
+                
+              </tr>
+              <tr>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.dano"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.dano" type="number" maxlength="2" size="2" value="{{item.system.dano}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.cdf"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.cdf" type="text" maxlength="2" size="2" value="{{item.system.cdf}}" data-dtype="String"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.cargador"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.cargador" type="number" maxlength="2" size="2" value="{{item.system.cargador}}" data-dtype="Number"/></h2></td>
+              </tr>
+            <table>
+              <tr>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.recarga"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.recarga" type="number" maxlength="2" size="2" value="{{item.system.recarga}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.energia"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.energia" type="number" maxlength="2" size="2" value="{{item.system.energia}}" data-dtype="Number"/></h2></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td><h2><label>&nbsp;{{localize "CDBE.ui.alcance"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.alcance.min" type="number" maxlength="2" size="2" value="{{item.system.alcance.min}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;/&nbsp;</label></h2></td>
+                <td><h2><input name="system.alcance.efec" type="number" maxlength="2" size="2" value="{{item.system.alcance.efec}}" data-dtype="Number"/></h2></td>
+                <td><h2><label>&nbsp;/&nbsp;</label></h2></td>
+                <td><h2><input name="system.alcance.max" type="number" maxlength="2" size="2" value="{{item.system.alcance.max}}" data-dtype="Number"/></h2></td>
+              </tr>
+            </table>    
+            <table>
+              <tr>
+                <td style="width:20%"><h2><label>&nbsp;{{localize "CDBE.ui.habilidad"}}&nbsp;</label></h2></td>
+                <td><h2><input name="system.habilidad" type="text" maxlength="2" size="2" value="{{item.system.habilidad}}" data-dtype="String"/></h2></td>
+              </tr>
+            </table>
           </div>
         </section>
 </form>
