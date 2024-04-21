@@ -1,51 +1,128 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 512 512"
-   style="height: 512px; width: 512px;"
-   version="1.1"
-   id="svg6"
-   sodipodi:docname="heart.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs10" />
-  <sodipodi:namedview
-     id="namedview8"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="1.1309669"
-     inkscape:cx="353.67968"
-     inkscape:cy="282.94374"
-     inkscape:window-width="1920"
-     inkscape:window-height="1052"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
-  <g
-     class=""
-     transform="translate(0,0)"
-     style=""
-     id="g4">
-    <path
-       d="M480.25 156.355c0 161.24-224.25 324.43-224.25 324.43S31.75 317.595 31.75 156.355c0-91.41 70.63-125.13 107.77-125.13 77.65 0 116.48 65.72 116.48 65.72s38.83-65.73 116.48-65.73c37.14.01 107.77 33.72 107.77 125.14z"
-       fill="#d0021b"
-       fill-opacity="1"
-       id="path2" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.2" width="135.47mm" height="135.47mm" viewBox="0 0 13547 13547" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="13547" height="13547"/>
+  </clipPath>
+  <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
+   <rect x="13" y="13" width="13520" height="13520"/>
+  </clipPath>
+ </defs>
+ <defs class="TextShapeIndex">
+  <g ooo:slide="id1" ooo:id-list="id3"/>
+ </defs>
+ <defs class="EmbeddedBulletChars">
+  <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
   </g>
-  <rect
-     style="fill:#ffffff;stroke:#000000;stroke-width:22.366;stroke-opacity:0"
-     id="rect849"
-     width="568.59326"
-     height="560.33191"
-     x="-26.994518"
-     y="-28.067522" />
+  <g id="bullet-char-template-57354" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 8,1128 L 1137,1128 1137,0 8,0 8,1128 Z"/>
+  </g>
+  <g id="bullet-char-template-10146" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 174,0 L 602,739 174,1481 1456,739 174,0 Z M 1358,739 L 309,1346 659,739 1358,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10132" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 2015,739 L 1276,0 717,0 1260,543 174,543 174,936 1260,936 717,1481 1274,1481 2015,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10007" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 0,-2 C -7,14 -16,27 -25,37 L 356,567 C 262,823 215,952 215,954 215,979 228,992 255,992 264,992 276,990 289,987 310,991 331,999 354,1012 L 381,999 492,748 772,1049 836,1024 860,1049 C 881,1039 901,1025 922,1006 886,937 835,863 770,784 769,783 710,716 594,584 L 774,223 C 774,196 753,168 711,139 L 727,119 C 717,90 699,76 672,76 641,76 570,178 457,381 L 164,-76 C 142,-110 111,-127 72,-127 30,-127 9,-110 8,-76 1,-67 -2,-52 -2,-32 -2,-23 -1,-13 0,-2 Z"/>
+  </g>
+  <g id="bullet-char-template-10004" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 285,-33 C 182,-33 111,30 74,156 52,228 41,333 41,471 41,549 55,616 82,672 116,743 169,778 240,778 293,778 328,747 346,684 L 369,508 C 377,444 397,411 428,410 L 1163,1116 C 1174,1127 1196,1133 1229,1133 1271,1133 1292,1118 1292,1087 L 1292,965 C 1292,929 1282,901 1262,881 L 442,47 C 390,-6 338,-33 285,-33 Z"/>
+  </g>
+  <g id="bullet-char-template-9679" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 813,0 C 632,0 489,54 383,161 276,268 223,411 223,592 223,773 276,916 383,1023 489,1130 632,1184 813,1184 992,1184 1136,1130 1245,1023 1353,916 1407,772 1407,592 1407,412 1353,268 1245,161 1136,54 992,0 813,0 Z"/>
+  </g>
+  <g id="bullet-char-template-8226" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 346,457 C 273,457 209,483 155,535 101,586 74,649 74,723 74,796 101,859 155,911 209,963 273,989 346,989 419,989 480,963 531,910 582,859 608,796 608,723 608,648 583,586 532,535 482,483 420,457 346,457 Z"/>
+  </g>
+  <g id="bullet-char-template-8211" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M -4,459 L 1135,459 1135,606 -4,606 -4,459 Z"/>
+  </g>
+  <g id="bullet-char-template-61548" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 173,740 C 173,903 231,1043 346,1159 462,1274 601,1332 765,1332 928,1332 1067,1274 1183,1159 1299,1043 1357,903 1357,740 1357,577 1299,437 1183,322 1067,206 928,148 765,148 601,148 462,206 346,322 231,437 173,577 173,740 Z"/>
+  </g>
+ </defs>
+ <g>
+  <g id="id2" class="Master_Slide">
+   <g id="bg-id2" class="Background"/>
+   <g id="bo-id2" class="BackgroundObjects"/>
+  </g>
+ </g>
+ <g class="SlideGroup">
+  <g>
+   <g id="container-id1">
+    <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+     <g class="Page">
+      <g class="Graphic">
+       <g id="id3">
+        <rect class="BoundingBox" stroke="none" fill="none" x="0" y="0" width="13547" height="13547"/>
+        <defs>
+         <clipPath id="clip_path_1" clipPathUnits="userSpaceOnUse">
+          <path d="M 0,0 L 13546,0 13546,13546 0,13546 0,0 Z"/>
+         </clipPath>
+        </defs>
+        <g clip-path="url(#clip_path_1)"/>
+        <defs>
+         <clipPath id="clip_path_2" clipPathUnits="userSpaceOnUse">
+          <path d="M 0,0 L 13546,0 13546,13546 0,13546 0,0 Z"/>
+         </clipPath>
+        </defs>
+        <g clip-path="url(#clip_path_2)"/>
+        <defs>
+         <clipPath id="clip_path_3" clipPathUnits="userSpaceOnUse">
+          <path d="M 0,0 L 13544,0 13544,13544 0,13544 0,0 Z"/>
+         </clipPath>
+        </defs>
+        <g clip-path="url(#clip_path_3)">
+         <path fill="rgb(208,2,27)" stroke="none" d="M 12704,4137 C 12704,8401 6773,12718 6773,12718 6773,12718 840,8401 840,4137 840,1718 2709,826 3691,826 5746,826 6773,2565 6773,2565 6773,2565 7798,826 9853,826 10835,826 12704,1718 12704,4137 L 12704,4137 12704,4137 12704,4137 Z"/>
+         <path fill="rgb(255,255,255)" stroke="none" d="M 6805,14080 L -714,14080 -714,-743 14327,-743 14327,14080 6805,14080 6805,14080 6805,14080 Z"/>
+        </g>
+        <g clip-path="url(#clip_path_2)"/>
+        <defs>
+         <clipPath id="clip_path_4" clipPathUnits="userSpaceOnUse">
+          <path d="M 8394,5912 L 13545,5912 13545,13545 8394,13545 8394,5912 Z"/>
+         </clipPath>
+        </defs>
+        <g clip-path="url(#clip_path_4)">
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12672,8534 L 13260,8534 13555,9122 13260,9710 12672,9710 12378,9122 12672,8534 12672,8534 12672,8534 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12672,8534 L 13260,8534 13555,9122 13260,9710 12672,9710 12378,9122 12672,8534 12672,8534 12672,8534 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 11595,9198 L 12183,9198 12478,9786 12183,10375 11595,10375 11301,9786 11595,9198 11595,9198 11595,9198 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 11595,9198 L 12183,9198 12478,9786 12183,10375 11595,10375 11301,9786 11595,9198 11595,9198 11595,9198 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12666,9831 L 13254,9831 13549,10421 13254,11011 12666,11011 12372,10421 12666,9831 12666,9831 12666,9831 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12666,9831 L 13254,9831 13549,10421 13254,11011 12666,11011 12372,10421 12666,9831 12666,9831 12666,9831 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 11622,10502 L 12212,10502 12507,11090 12212,11679 11622,11679 11328,11090 11622,10502 11622,10502 11622,10502 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 11622,10502 L 12212,10502 12507,11090 12212,11679 11622,11679 11328,11090 11622,10502 11622,10502 11622,10502 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12657,11100 L 13245,11100 13540,11688 13245,12277 12657,12277 12363,11688 12657,11100 12657,11100 12657,11100 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12657,11100 L 13245,11100 13540,11688 13245,12277 12657,12277 12363,11688 12657,11100 12657,11100 12657,11100 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12643,12383 L 13233,12383 13528,12971 13233,13560 12643,13560 12349,12971 12643,12383 12643,12383 12643,12383 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12643,12383 L 13233,12383 13528,12971 13233,13560 12643,13560 12349,12971 12643,12383 12643,12383 12643,12383 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 11666,11784 L 12254,11784 12549,12372 12254,12960 11666,12960 11372,12372 11666,11784 11666,11784 11666,11784 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 11666,11784 L 12254,11784 12549,12372 12254,12960 11666,12960 11372,12372 11666,11784 11666,11784 11666,11784 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12630,7243 L 13218,7243 13512,7831 13218,8420 12630,8420 12336,7831 12630,7243 12630,7243 12630,7243 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12630,7243 L 13218,7243 13512,7831 13218,8420 12630,8420 12336,7831 12630,7243 12630,7243 12630,7243 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 12607,5926 L 13195,5926 13490,6514 13195,7101 12607,7101 12313,6514 12607,5926 12607,5926 12607,5926 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 12607,5926 L 13195,5926 13490,6514 13195,7101 12607,7101 12313,6514 12607,5926 12607,5926 12607,5926 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 10678,12463 L 11266,12463 11561,13051 11266,13640 10678,13640 10384,13051 10678,12463 10678,12463 10678,12463 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 10678,12463 L 11266,12463 11561,13051 11266,13640 10678,13640 10384,13051 10678,12463 10678,12463 10678,12463 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 10669,11165 L 11257,11165 11552,11753 11257,12341 10669,12341 10375,11753 10669,11165 10669,11165 10669,11165 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 10669,11165 L 11257,11165 11552,11753 11257,12341 10669,12341 10375,11753 10669,11165 10669,11165 10669,11165 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 9684,11799 L 10272,11799 10567,12387 10272,12975 9684,12975 9390,12387 9684,11799 9684,11799 9684,11799 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 9684,11799 L 10272,11799 10567,12387 10272,12975 9684,12975 9390,12387 9684,11799 9684,11799 9684,11799 Z"/>
+         <path fill="rgb(57,95,100)" stroke="none" d="M 8702,12454 L 9290,12454 9585,13042 9290,13631 8702,13631 8408,13042 8702,12454 8702,12454 8702,12454 Z"/>
+         <path fill="none" stroke="rgb(57,95,100)" stroke-width="28" stroke-linejoin="round" d="M 8702,12454 L 9290,12454 9585,13042 9290,13631 8702,13631 8408,13042 8702,12454 8702,12454 8702,12454 Z"/>
+        </g>
+        <g clip-path="url(#clip_path_2)">
+         <path fill="rgb(255,255,255)" stroke="none" d="M 10737,14721 L 7158,14721 7158,4139 14316,4139 14316,14721 10737,14721 10737,14721 Z"/>
+         <path fill="none" stroke="rgb(255,255,255)" stroke-width="28" stroke-linejoin="round" d="M 10737,14721 L 7158,14721 7158,4139 14316,4139 14316,14721 10737,14721 10737,14721 Z"/>
+        </g>
+        <g clip-path="url(#clip_path_1)"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
 </svg>

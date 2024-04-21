@@ -39,7 +39,7 @@ Hooks.once("init", function(){
     name: game.i18n.localize("CDBE.config.bgImageName"),
     hint: game.i18n.localize("CDBE.config.bgImageHint"),
     type: String,
-    default: 'systems/cdbe/style/images/white.webp',
+    default: 'systems/cdbe/style/images/cdbe.webp',
     scope: 'world',
     requiresReload: true,
     config: true,

@@ -168,6 +168,7 @@
         },
         "objeto": {
             "notas": "",
+            "equipado": false,
             "nt": 0,
             "coste": 0,
             "estorbo": 0
@@ -181,7 +182,11 @@
             "manos": 1,
             "dano": 0,
             "cdf": "",
-            "cargador": 0,
+            "cargador": {
+                "value": 0,
+                "min": 0,
+                "max": 0
+            },
             "recarga": 0,
             "energia": "",
             "alcance": {

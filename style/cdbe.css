@@ -128,6 +128,10 @@
 }
 
 .armornotes {
+    height: 264px;
+}
+
+.weaponnotes {
     height: 363px;
 }
 
@@ -212,7 +216,7 @@
 
 
 :root { 
-    --bg-image: url("../../../systems/cdbe/style/images/white.webp");
+    --bg-image: url("../../../systems/cdbe/style/images/cdbe.webp");
     --chat-bg-image: url("../../../systems/cdbe/style/images/white.webp");
     --font-name: "Zekton";
     --main-color: #395F64;
