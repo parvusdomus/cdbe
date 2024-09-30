@@ -1,8 +1,8 @@
 export default class CDBE_NPC_SHEET extends ActorSheet{
     static get defaultOptions() {
-      return mergeObject(super.defaultOptions, {
+      return foundry.utils.mergeObject(super.defaultOptions, {
           classes: ["cdbe", "sheet", "actor"],
-          template: "systems/cdbe/templates/actors/NPC.html",
+          template: "systems/cdbe/templates/actors/pnj/character.html",
           width: 600,
           height: 505,
           tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "general" }]

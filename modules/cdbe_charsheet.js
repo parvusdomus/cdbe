@@ -1,8 +1,9 @@
+import {DiceRoll} from "./rolls.js";
 export default class CDBE_CHAR_SHEET extends ActorSheet{
     static get defaultOptions() {
-      return mergeObject(super.defaultOptions, {
+      return foundry.utils.mergeObject(super.defaultOptions, {
           classes: ["cdbe", "sheet", "actor"],
-          template: "systems/cdbe/templates/actors/character.html",
+          template: "systems/cdbe/templates/actors/pj/character.html",
           width: 700,
           height: 670,
           tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "general" }],
@@ -195,7 +196,7 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       html.find('a.entrenado-toggle').click(this._onEntrenadoToggle.bind(this));
       html.find('a.fatiga-toggle').click(this._onFatigaToggle.bind(this));
       html.find('a.item-equip').click(this._onEquipToggle.bind(this));
-      html.find('a.dice-roll').click(this._onDiceRoll.bind(this));
+      html.find('a.skill-roll').click(this._onSkillRoll.bind(this));
       html.find('a.resource-change').click(this._onResourceChange.bind(this));
     }
 
@@ -203,7 +204,7 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       event.preventDefault();
       const header = event.currentTarget;
       const type = header.dataset.type;
-      const data = duplicate(header.dataset);
+      const data = foundry.utils.duplicate(header.dataset);
       const name = `${type.capitalize()}`;
       const itemData = {
         name: name,
@@ -416,10 +417,44 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       return;
     }
 
-    async _onDiceRoll(event)
+    async _onSkillRoll(event)
     {
       event.preventDefault();
-      DiceRollV2(event);
+      const dataset = event.currentTarget.dataset;
+      let titulo=dataset.habilidad
+      let actor_id = this.actor._id;
+      let html_content='<div class="dialogo">'
+      html_content+='<table><tr><td><h2><label>'+titulo+'</label></h2></td></tr></table>'
+      let tirada=""
+      if (dataset.entrenada == "true"){
+        tirada="2d6+"+dataset.nivel
+      }
+      else{
+        tirada="2d6-4"
+      }
+      html_content+='<table><tr><td><h1><label>'+tirada+'</label></h1></td>'
+      html_content+='<td><h1><label>+</label></h1></td><td><h1><input name="modificador" id="modificador" data-dtype="Number" value="0" size=2></input></h1></td>'
+      html_content+='<td><h2><label>VS</label></h2></td><td><h1><input name="dificultad" id="dificultad" data-dtype="Number" value="9" size=2></input><h1></td>'
+      html_content+='</tr></table></div>'
+      let d = new Dialog({
+        title: titulo,
+        content: html_content,
+        buttons: {
+         tirar: {
+          icon: '<i class="fa-solid fa-dice" style="color: darkred;"></i>',
+          label: "Tirar",
+          callback: () => {
+            let dificultad=document.getElementById("dificultad").value;
+            let modificador=document.getElementById("modificador").value;
+            DiceRoll(actor_id,titulo,tirada, modificador, dificultad)
+          }
+         }
+        },
+        default: "normal",
+        render: html => console.log("Register interactivity in the rendered dialog"),
+        close: html => console.log("This always is logged no matter which option is chosen")
+       });
+       d.render(true);
       return;
     }
   

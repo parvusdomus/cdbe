@@ -1,6 +1,6 @@
 export default class CDBE_ITEM_SHEET extends ItemSheet{
     static get defaultOptions() {
-      return mergeObject(super.defaultOptions, {
+      return foundry.utils.mergeObject(super.defaultOptions, {
           classes: ["cdbe", "sheet", "item"],
           template: "systems/cdbe/templates/actors/character.html",
           width: 400,

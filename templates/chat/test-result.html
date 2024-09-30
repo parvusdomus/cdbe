@@ -1,7 +1,6 @@
 <div class="cdbe test-result">
     {{{testResult}}}
-    {{{rollText}}}
-    
+    {{{result}}}
 </div>
 <div class="cdbe dice-breakdown">
     {{#each dados as |die|}}
@@ -18,8 +17,6 @@
         </span> 
     {{/each}}
 </div>
-{{#if canSpendKarma}}
-    <div class="cdbe test-result">
-        <a class="spendKarma" data-rollResult="{{rollResult}}" data-dados="{{dados}}" data-nDice="{{nDice}}" data-rollText="{{rollText}}" data-rollText="{{rollText}}" data-nDiff="{{nDiff}}" data-testResult="{{testResult}}" data-actor_id="{{actor_id}}"><h3 class="enabled">{{localize "CDBE.ui.spendKarma"}}</h3></a>
-    </div>
-{{/if}}
+<div class="cdbe test-result">
+    {{{rollText}}}
+</div>

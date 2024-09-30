@@ -16,6 +16,7 @@
     width: 40%;
     max-height: 100%;
     text-align: center;
+    padding-right: 10px;
 }
 
 .left-section h2{
@@ -93,6 +94,7 @@
 .right-section {
     width: 60%;
     height: 100%;
+    padding-left: 10px;
 }
 
 .editor {
@@ -216,7 +218,7 @@
 
 
 :root { 
-    --bg-image: url("../../../systems/cdbe/style/images/cdbe.webp");
+    --bg-image: url("../../../systems/cdbe/style/images/cdbe_blue.webp");
     --chat-bg-image: url("../../../systems/cdbe/style/images/white.webp");
     --font-name: "Zekton";
     --main-color: #395F64;
@@ -232,12 +234,24 @@
 .test-result{
     text-align: center;
 }
+
 .test-result h3{
     font-family: var(--font-name);
     
     border-bottom: none;
 }
 
+.test-result h4{
+    font-family: var(--font-name);
+    
+    border-bottom: none;
+}
+
+.test-result h1{
+    font-family: var(--font-name);
+    
+    border-bottom: none;
+}
 
 .dice-breakdown{
     text-align: center;

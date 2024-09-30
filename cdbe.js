@@ -18,7 +18,7 @@ Hooks.once("init", function(){
   });
   Actors.registerSheet("cdbe", CDBE_NPC_SHEET, {
     makeDefault: true,
-    types: ['NPC']
+    types: ['PNJ']
   });
   console.log("test | INITIALIZING CDBE ITEM SHEETS...");
   Items.unregisterSheet("core", ItemSheet);
@@ -39,7 +39,7 @@ Hooks.once("init", function(){
     name: game.i18n.localize("CDBE.config.bgImageName"),
     hint: game.i18n.localize("CDBE.config.bgImageHint"),
     type: String,
-    default: 'systems/cdbe/style/images/cdbe.webp',
+    default: 'systems/cdbe/style/images/cdbe_blue.webp',
     scope: 'world',
     requiresReload: true,
     config: true,
