@@ -28,21 +28,22 @@ export async function DiceRoll(actor_id,titulo,tirada, modificador, dificultad)
         dados.push(d6Roll.terms[0].results[i].result);
     }
     let result=d6Roll._total
+    let ge=Number(result)-difficulty
 
     if (result >= difficulty){
         testResult="<h3 class=\"regular-success\">"+game.i18n.localize("CDBE.ui.regularSuccess")+"</h3>"
-        rollText="<h4 class=\"regular-success\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
-        resultText="<h1 class=\"regular-success\">"+result+"</h1>"
+        rollText="<h4 class=\"basic-result\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
+        resultText="<h1 class=\"basic-result\">"+result+" (GE "+ge+")</h1>"
     }
     else{
         testResult="<h3 class=\"regular-failure\">"+game.i18n.localize("CDBE.ui.regularFailure")+"</h3>"
-        rollText="<h4 class=\"regular-failure\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
-        resultText="<h1 class=\"regular-failure\">"+result+"</h1>"
+        rollText="<h4 class=\"basic-result\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
+        resultText="<h1 class=\"basic-result\">"+result+"</h1>"
     }
     if (nUnos >= nDice){
         testResult="<h3 class=\"critical-failure\">"+game.i18n.localize("CDBE.ui.criticalFailure")+"</h3>"
-        rollText="<h4 class=\"critical-failure\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
-        resultText="<h1 class=\"critical-failure\">"+result+"</h1>"
+        rollText="<h4 class=\"basic-result\">"+titulo+": "+textoTirada+" VS "+difficulty+"</h4>"
+        resultText="<h1 class=\"basic-result\">"+result+"</h1>"
     }
     let renderedRoll = await renderTemplate("systems/cdbe/templates/chat/test-result.html", { 
         rollResult: d6Roll, 

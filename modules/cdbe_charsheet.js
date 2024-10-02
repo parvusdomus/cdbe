@@ -423,8 +423,6 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       const dataset = event.currentTarget.dataset;
       let titulo=dataset.habilidad
       let actor_id = this.actor._id;
-      let html_content='<div class="dialogo">'
-      html_content+='<table><tr><td><h2><label>'+titulo+'</label></h2></td></tr></table>'
       let tirada=""
       if (dataset.entrenada == "true"){
         tirada="2d6+"+dataset.nivel
@@ -432,16 +430,16 @@ export default class CDBE_CHAR_SHEET extends ActorSheet{
       else{
         tirada="2d6-4"
       }
-      html_content+='<table><tr><td><h1><label>'+tirada+'</label></h1></td>'
-      html_content+='<td><h1><label>+</label></h1></td><td><h1><input name="modificador" id="modificador" data-dtype="Number" value="0" size=2></input></h1></td>'
-      html_content+='<td><h2><label>VS</label></h2></td><td><h1><input name="dificultad" id="dificultad" data-dtype="Number" value="9" size=2></input><h1></td>'
-      html_content+='</tr></table></div>'
+     
+      const html_content = await renderTemplate("systems/cdbe/templates/dialogs/skill_roll.html", {
+        tirada: tirada
+      });
       let d = new Dialog({
-        title: titulo,
+        title: game.i18n.localize("CDBE.ui.skillRoll")+titulo,
         content: html_content,
         buttons: {
          tirar: {
-          icon: '<i class="fa-solid fa-dice" style="color: darkred;"></i>',
+          icon: '<i class="fa-solid fa-dice" style="color: var(--main-color);"></i>',
           label: "Tirar",
           callback: () => {
             let dificultad=document.getElementById("dificultad").value;

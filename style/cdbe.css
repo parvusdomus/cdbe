@@ -220,8 +220,10 @@
 :root { 
     --bg-image: url("../../../systems/cdbe/style/images/cdbe_blue.webp");
     --chat-bg-image: url("../../../systems/cdbe/style/images/white.webp");
+    --dialog-bg-image: url("../../../systems/cdbe/style/images/cdbe_blue_dialog.webp");
     --font-name: "Zekton";
     --main-color: #395F64;
+    --main-color-chat: rgba(57, 95, 100, 0.5);
     --secondary-color: #AEB7BA;
 }
 
@@ -229,6 +231,49 @@
     background-color: white;
     background: var(--bg-image) no-repeat;
     background-size: 100% 100%;
+}
+
+.dialog{
+    background-color: white;
+    background: var(--dialog-bg-image) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: var(--font-name);
+    color: var(--main-color);
+}
+
+.dialog .window-content{
+    background: none;
+}
+
+.cdbe-dialog {
+    font-family: var(--font-name);
+    color: var(--main-color);
+}
+
+.cdbe-dialog table{
+    border-top: none;
+    border-bottom: none; 
+    background: none;
+}
+
+.cdbe-dialog h1{
+    font-family: var(--font-name);
+    border-bottom: none;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 89% 100%, 10% 100%, 0% 50%);
+}
+
+.cdbe-dialog h3{
+    font-family: var(--font-name);
+    border-bottom: none;
+}
+
+.cdbe-dialog input{
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-family: var(--font-name);
+    text-align: center;
 }
 
 .test-result{
@@ -260,6 +305,11 @@
 .d-flex{
     display:flex!important;
     align-items: center;
+}
+
+.basic-result {
+    background-color: var(--main-color-chat);
+    color: white;
 }
 
 .regular-success {
